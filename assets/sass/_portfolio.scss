@@ -1,0 +1,40 @@
+.portfolio {
+    &--list {
+        > div {
+            height: 100%;
+            @media all and (max-width: 380px) {
+              max-width: 100%;
+              flex: 0 0 100%;
+            }
+            a {
+                height: 100%;
+                display: block;
+            }
+        }
+        &--item {
+            &--img {
+                min-height: 250px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                @include transition(all 1s);
+                &:hover {
+                    background-position: 0 100%;
+                    @include transition(all 5s);
+                }
+            }
+            &--desc {
+                border: 1px solid $color;
+                padding: 10px;
+                background-color: $color;
+                border-top: 1px solid $color3;
+                color: $text_color;
+                min-height: 90px;
+                h3 {
+                    color: $title_color;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

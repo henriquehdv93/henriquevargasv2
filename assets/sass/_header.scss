@@ -1,0 +1,139 @@
+.header {
+    background-color: transparent;
+    > .container {
+        position: relative;
+    }
+    .navbar {
+        background-color: transparent;
+        @include transition(all .5s);
+        .navbar-brand img {
+            max-width: 175px;
+            
+        }
+        &.fixed-top {
+            max-height: auto;
+            @include media-breakpoint-up(lg) {
+                max-height: 80px;
+            }
+
+            .header_phone_share {
+                display: none !important;
+            }
+            .navbar-nav.padding_menu, .navbar-nav + .padding_menu {
+                @include media-breakpoint-up(lg) {
+                    padding-top: 0!important;
+                }
+            }
+        }
+        &.bg-black {
+            background-color: #000000;
+        }
+        .navbar-brand {
+            img {
+                width: 80%;
+                max-width: 175px;
+                @include media-breakpoint-up(sm) {
+                    width: auto;
+                }
+            }
+        }
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 1);
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+            }
+        }
+        .navbar-toggler-name {
+            font-size: 16px;
+            font-family: $font;
+            font-weight: 700;
+            color: $color;
+        }
+        .navbar-collapse {
+            position: relative;
+            @include media-breakpoint-down(md) {
+                background-color: #000;
+                padding-top: 20px;
+            }
+            .navbar-nav {
+                .nav-item {
+                    text-align: center;
+                    margin-bottom: 20px;
+                    @include media-breakpoint-up(lg) {
+                        text-align: left;
+                        margin-bottom: 0;
+                    }
+                }
+                .nav-link {
+                    font-size: 18px;
+                    color: $color;
+                    position: relative;
+                    margin: 0 10px;
+                    padding: 10px 10px;
+                    &:hover {
+                        background-color: $color1;
+                    }
+                }
+            }
+        }
+    }
+}
+.main_banner {
+    position: relative;
+    &--item {
+        background-size: cover;
+        min-height: 350px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: #FFF;
+        position: relative;
+        padding-top: 14%;
+        @include media-breakpoint-up(lg) {
+            min-height: 640px;
+        }
+        &--title {
+            font-size: 20px;
+            font-style: italic;
+            position: relative;
+            z-index: 20;
+            text-shadow: 1px 1px rgba(0, 0, 0, .4);
+            animation-delay: .6s;
+            color: $color;
+            margin-top: 60px;
+            @include media-breakpoint-up(sm) {
+             margin-top: 0;
+            }
+            @include media-breakpoint-up(lg) {
+                font-size: 48px;
+            }
+        }
+        &--list {
+            font-size: 20px;
+            font-style: italic;
+            position: relative;
+            z-index: 20;
+            text-shadow: 1px 1px rgba(0, 0, 0, .4);
+            @include media-breakpoint-up(lg) {
+                font-size: 30px;
+            }
+            li {
+                list-style: none;
+                line-height: 1.4;
+                &:nth-child(1) {
+                    animation-delay: 1.5s;
+                }
+                &:nth-child(2) {
+                    animation-delay: 2s;
+                }
+                &:nth-child(3) {
+                    animation-delay: 2.5s;
+                }
+            }
+        }
+        .btn_default_alt {
+            position: relative;
+            z-index: 20;
+            animation-delay: 1.5s;
+        }
+    }
+}

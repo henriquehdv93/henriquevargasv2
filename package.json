@@ -1,0 +1,42 @@
+{
+  "name": "henriquevargas",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Henrique Duarte Vargas",
+  "private": true,
+  "scripts": {
+    "dev": "NUXT_HOST=0.0.0.0 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.8.0",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/fontawesome": "^1.1.2",
+    "@nuxtjs/recaptcha": "^0.6.2",
+    "@nuxtjs/robots": "^2.4.2",
+    "@nuxtjs/sitemap": "^2.0.1",
+    "axios": "^0.19.0",
+    "lodash": "^4.17.20",
+    "nuxt": "^2.0.0",
+    "nuxt-validate": "^1.0.1",
+    "vee-validate": "^3.0.0",
+    "vue-slick-carousel": "^1.0.0",
+    "vue-the-mask": "^0.11.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/gtm": "^2.1.1",
+    "@nuxtjs/ngrok": "^1.2.8",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "autoprefixer": "^7.2.3",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.0",
+    "popper.js": "1.16.0",
+    "postcss-hexrgba": "^2.0.0",
+    "postcss-responsive-type": "^1.0.0",
+    "precss": "^2.0.0",
+    "sass-loader": "^8.0.0"
+  }
+}

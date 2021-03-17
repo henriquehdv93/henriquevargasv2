@@ -1,0 +1,40 @@
+.testimonials {
+  .testimonials_carousel {
+    p {
+      font-size: 16px;
+      display: inline-block;
+    }
+    svg {
+      fill: $color3;
+      margin-bottom: 2rem;
+    }
+    h3 {
+      font-size: 14px;
+      font-weight: 700;
+    }
+    h4 {
+      font-size: 14px;
+      
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 105px;
+      @include border-radius(50%);
+      object-fit: cover;
+    }
+    &.owl-carousel .owl-dots {
+      margin-top: 20px;
+      .owl-dot {
+        width: 46px;
+        height: 7px;
+        @include border-radius(0);
+        margin: 0 5px;
+        background-color: #BBB;
+        &.active {
+          background-color: $color1;
+        }
+      }
+    }
+  }
+}
