@@ -1,4 +1,7 @@
 .about {
     font-size: 16px;
     color: $color;
+    img {
+        max-width: 255px;
+    }
 }

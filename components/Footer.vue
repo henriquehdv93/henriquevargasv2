@@ -5,7 +5,7 @@
             <h3>{{ contact.title }}</h3>
             <div v-html="contact.text"></div>
             <div class="footer--email_phone d-sm-flex justify-content-center pt-5">
-                <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center mb-3 mb-sm-0">
                     <i class="fas fa-envelope"></i>
                     <span>{{ site_info.email }}</span>
                 </div>

@@ -45,10 +45,8 @@ export default {
     ** Plugins to load before mounting the App
     */
     plugins: [
-        {src: `~plugins/vee-validate`, ssr: true},
         // {src: `~plugins/popper.js`, ssr: true},
         {src: `~plugins/jquery.js`, ssr: true},
-        {src: '~plugins/vue-slick-carousel.js', ssr: true}
     ],
     /*
     ** Nuxt.js dev-modules
@@ -65,9 +63,7 @@ export default {
     *   * Nuxt.js modules
     */
     modules: [
-        '@nuxtjs/ngrok',
-        ['@nuxtjs/axios', { baseURL: process.env.NUXT_ENV_URL_BASE_API }],
-        // ['@nuxtjs/recaptcha'],
+        // ['@nuxtjs/axios', { baseURL: process.env.NUXT_ENV_URL_API }],
         ['@nuxtjs/robots', {
           UserAgent: '*',
           Allow: '/'
@@ -81,7 +77,7 @@ export default {
     ],
     build: {
         transpile: [
-            "vee-validate"
+            
         ],
         extractCSS: true,
         optimization: {

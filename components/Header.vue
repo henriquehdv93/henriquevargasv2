@@ -44,17 +44,17 @@
             {
                 name: 'Especialidades',
                 url: '#especialidades',
-                hash: '/',
+                hash: '',
             },
             {
                 name: 'Portfólio',
                 url: '#portfolio',
-                hash: '/',
+                hash: '',
             },
             {
                 name: 'Sobre mim',
                 url: '#sobre_mim',
-                hash: '/',
+                hash: '',
             },
         ]
     }),

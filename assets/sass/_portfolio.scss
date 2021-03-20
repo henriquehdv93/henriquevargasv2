@@ -1,23 +1,27 @@
 .portfolio {
     &--list {
-        > div {
-            height: 100%;
-            @media all and (max-width: 380px) {
-              max-width: 100%;
-              flex: 0 0 100%;
-            }
-            a {
-                height: 100%;
-                display: block;
-            }
-        }
         &--item {
+            flex: 1;
+            @media all and (max-width: 480px) {
+                max-width: 100%;
+                flex: 0 0 100%;
+              }
+              a {
+                  height: 100%;
+                  display: block;
+              }
+              a {
+                  display: flex;
+                  flex-direction: column;
+                  background-color: $color;
+              }
             &--img {
                 min-height: 250px;
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: 0 0;
                 @include transition(all 1s);
+                border-bottom: 1px solid $color3;
                 &:hover {
                     background-position: 0 100%;
                     @include transition(all 5s);
@@ -27,9 +31,8 @@
                 border: 1px solid $color;
                 padding: 10px;
                 background-color: $color;
-                border-top: 1px solid $color3;
                 color: $text_color;
-                min-height: 90px;
+                
                 h3 {
                     color: $title_color;
                     font-size: 16px;
