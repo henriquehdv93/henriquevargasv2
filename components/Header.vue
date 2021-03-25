@@ -52,6 +52,11 @@
                 hash: '',
             },
             {
+                name: 'Depoimentos',
+                url: '#depoimentos',
+                hash: '',
+            },
+            {
                 name: 'Sobre mim',
                 url: '#sobre_mim',
                 hash: '',

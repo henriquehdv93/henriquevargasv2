@@ -2,14 +2,14 @@
   <footer class="footer">
     <div class="container">
         <div class="d-flex text-center justify-content-center flex-column">
-            <h3>{{ contact.title }}</h3>
-            <div v-html="contact.text"></div>
+            <h3 data-aos="fade-up" data-aos-duration="1000">{{ contact.title }}</h3>
+            <div v-html="contact.text" data-aos="fade-up" data-aos-duration="1000"></div>
             <div class="footer--email_phone d-sm-flex justify-content-center pt-5">
-                <div class="d-flex align-items-center mb-3 mb-sm-0">
+                <div class="d-flex align-items-center mb-3 mb-sm-0" data-aos="fade-right" data-aos-duration="1000">
                     <i class="fas fa-envelope"></i>
                     <span>{{ site_info.email }}</span>
                 </div>
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center" data-aos="fade-left" data-aos-duration="1000">
                     <i class="fas fa-phone"></i>
                     <span>{{ site_info.phone }}</span>
                 </div>

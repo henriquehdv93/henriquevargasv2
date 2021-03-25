@@ -1,6 +1,6 @@
 <template>
   <div class="footer--socials d-flex justify-content-center py-5">
-    <a v-for="(item, index) in socials" :key="index" :href="item.url" rel="nofollow" :title="item.title" :aria-label="item.title">
+    <a v-for="(item, index) in socials" :key="index" :href="item.url" rel="nofollow" :title="item.title" :aria-label="item.title" data-aos="zoom-in">
         <i :class="item.icon" aria-hidden="true" ></i>
     </a>
   </div>

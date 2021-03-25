@@ -21,6 +21,7 @@ export default {
             {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap'},
             {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Mulish&display=swap'},
             {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'},
+            {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'},
         ],
         // script: [
         //     {src: '/js/jquery-3.4.1.min.js', type: "text/javascript"},
@@ -39,6 +40,7 @@ export default {
         // SCSS file in the project
         '~/assets/sass/bootstrap/bootstrap.scss',
         '~/assets/sass/main.scss',
+        'aos/dist/aos.css',
         // CSS file in the project
     ],
     /*
@@ -47,13 +49,17 @@ export default {
     plugins: [
         // {src: `~plugins/popper.js`, ssr: true},
         {src: `~plugins/jquery.js`, ssr: true},
+        {src: "@/plugins/aos", mode: "client" },
     ],
+    purgeCSS: {
+        whitelist: ["aos-init", "aos-animate", "data-aos-delay", "data-aos-duration", "fade-up", "zoom-in"],
+    },
     /*
     ** Nuxt.js dev-modules
     */
     buildModules: [
-      // ['@nuxtjs/gtm', {id: 'GTM-TTJT9DD', dev: false}]
-      '@nuxtjs/fontawesome',
+        '@nuxtjs/ngrok',
+        '@nuxtjs/fontawesome',
     ],
     fontawesome: {
       icons: [

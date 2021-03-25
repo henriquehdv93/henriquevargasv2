@@ -3,9 +3,9 @@
     <section class="main_banner">
       <div class="main_banner--item" :style="{ backgroundImage: 'url(' + banner.url + ')' }">
         <div class="container">
-            <h2 class="main_banner--item--title mb-4 mb-md-5 text-uppercase animated fadeInLeft">{{ banner.name }}</h2>
+            <h2 class="main_banner--item--title mb-4 mb-md-5 text-uppercase animate__animated animate__fadeInLeft">{{ banner.name }}</h2>
             <ul class="main_banner--item--list">
-                <li class="animated fadeInLeft" v-for="(item, index) in banner.short_phrases" :key="index">{{ item.text }}</li>
+                <li class="animate__animated animate__fadeInLeft" v-for="(item, index) in banner.short_phrases" :key="index">{{ item.text }}</li>
             </ul>
         </div>
       </div>

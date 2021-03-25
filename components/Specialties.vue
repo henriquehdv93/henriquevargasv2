@@ -1,16 +1,16 @@
 <template>
-  <section class="services section_padding_large">
+  <section class="specialties section_padding_large">
         <span class="section_anchor" id="especialidades"></span>
         <div class="container">
             <div class="row">
-                <div class="col-md-8 offset-md-2 text-center section_title">
+                <div class="col-md-8 offset-md-2 text-center section_title" data-aos="fade-up"  data-aos-duration="1000">
                     <h2 class="mb-4 mb-md-5 title">{{ specialties.title }}</h2>
                     <p class="text">{{ specialties.text }}</p>
                 </div>
             </div>
-            <div class="row justify-content-center mt-5 services--list">
-                <div class="col-6 col-md-4 mb-4" v-for="(item, index) in specialties.list" :key="index">
-                    <div class="services--list--item">
+            <div class="row justify-content-center mt-5 specialties--list">
+                <div class="col-6 col-md-6 col-lg-4 mb-4" data-aos="fade-up"  data-aos-duration="1000" v-for="(item, index) in specialties.list" :key="index">
+                    <div class="specialties--list--item">
                         <div v-html="item.icon"></div>
                         <h3>{{ item.name }}</h3>
                         <p>

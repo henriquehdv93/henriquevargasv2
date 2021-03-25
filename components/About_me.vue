@@ -3,16 +3,16 @@
         <span class="section_anchor" id="sobre_mim"></span>
         <div class="container">
             <div class="row">
-                <div class="col-md-8 offset-md-2 text-center section_title">
+                <div class="col-md-8 offset-md-2 text-center section_title" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="mb-4 mb-md-5 title">{{ about.title }}</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <figure class="figure_float_left">
+                    <figure class="figure_float_left" data-aos="fade-right" data-aos-duration="1000">
                         <img :src="about.image" :title="about.title" :alt="about.title" >
                     </figure>
-                    <div v-html="about.text"></div> 
+                    <div v-html="about.text" data-aos="fade-left" data-aos-duration="1000"></div> 
                 </div>
             </div>
         </div>
