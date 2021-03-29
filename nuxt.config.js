@@ -10,24 +10,36 @@ export default {
         title: 'Henrique Vargas - Desenvolvedor web',
         meta: [
             {charset: 'utf-8'},
+            {name: 'msapplication-TileColor', content: '#da532c'},
+            {name: 'theme-color', content: '#615CFD'},
             {name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no'},
-            {hid: 'description', name: 'description', content: 'colocar descrição'},
+            {hid: 'description', name: 'description', content: 'Com mais de 7 anos de experiência em programação e suporte ao cliente, trabalho com desenvolvimento de sites institucionais, blogs, lojas virtuais, hotsites, portais de notícias e landing pages focando sempre na usabilidade, acessibilidade e melhor performance para o usuário'},
+            {hid: 'keywords', name: 'description', content: 'Desenvolvimento de sites, Web Design, Front-End, Back-End, E-Commerce, Wordpress, Nuxt.js, Blogs, Portais de notícias, Rio Grande, Rio Grande do Sul, Brasil'},
             {hid: 'og:title', property: 'og:title', content: 'Promed Call'},
-            {hid: 'og:description', property: 'og:description', content: 'colocar descrição'},
-            {hid: 'og:type', property: 'og:type', content: 'website'}
+            {hid: 'og:description', property: 'og:description', content: 'Com mais de 7 anos de experiência em programação e suporte ao cliente, trabalho com desenvolvimento de sites institucionais, blogs, lojas virtuais, hotsites, portais de notícias e landing pages focando sempre na usabilidade, acessibilidade e melhor performance para o usuário'},
+            {hid: 'twitter:description', property: 'twitter:description', content: 'Com mais de 7 anos de experiência em programação e suporte ao cliente, trabalho com desenvolvimento de sites institucionais, blogs, lojas virtuais, hotsites, portais de notícias e landing pages focando sempre na usabilidade, acessibilidade e melhor performance para o usuário'},
+            {hid: 'og:type', property: 'og:type', content: 'website'},
+            {hid: 'og:url', property: 'og:url', content: 'https://www.henriquevargas.com.br'},
+            {hid: 'og:image', property: 'og:image', content: 'website'},
+            {hid: 'twitter:image', property: 'twitter:image', content: 'http://henriquevargas.com.br/images/compartilhamento.png'},
+            {hid: 'og:type', property: 'og:type', content: 'http://henriquevargas.com.br/images/compartilhamento.png'},
         ],
         link: [
-            {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico?1'},
+            {rel: 'canonical', href: 'https://www.henriquevargas.com.br'},
+            {rel: 'apple-touch-icon', href: '/apple-touch-icon.png'},
+            {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png'},
+            {rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png'},
+            {rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5'},
+            {rel: 'manifest', href: '/site.webmanifest'},
             {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap'},
             {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Mulish&display=swap'},
             {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'},
             {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'},
         ],
-        // script: [
-        //     {src: '/js/jquery-3.4.1.min.js', type: "text/javascript"},
-        //     {src: '/js/bootstrap.min.js', type: "text/javascript"},
-        //     {src: '/js/main.js', type: "text/javascript"}
-        // ]
+        script: [
+            {src: '/js/jquery.min.js', type: "text/javascript"},
+            {src: '/js/bootstrap.min.js', type: "text/javascript"},
+        ]
     },
     /*
     ** Customize the progress-bar color
@@ -58,9 +70,11 @@ export default {
     ** Nuxt.js dev-modules
     */
     buildModules: [
+        '@nuxtjs/gtm',
         '@nuxtjs/ngrok',
         '@nuxtjs/fontawesome',
     ],
+    gtm: { id: 'GTM-NNNB5LK', pageTracking: true },
     fontawesome: {
       icons: [
       ],
@@ -137,13 +151,16 @@ export default {
     },
     router: {
         scrollBehavior(to) {
-          if (to.hash) {
+            if(process.browser) {
+                $('#navigation').collapse('hide');
+            }
+            if (to.hash) {
             return window.scrollTo({
-              top: document.querySelector(to.hash).offsetTop + window.innerHeight,
-              behavior: 'smooth'
+                top: document.querySelector(to.hash).offsetTop + window.innerHeight,
+                behavior: 'smooth'
             })
-          }
-          return window.scrollTo({ top: 0, behavior: 'smooth' })
+            }
+            return window.scrollTo({ top: 0, behavior: 'smooth' })
         }
     }
 }

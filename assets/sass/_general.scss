@@ -1,3 +1,4 @@
+
 // * {
 //   outline: 1px solid red;
 // }
@@ -7,6 +8,7 @@ html {
   font-smoothing: antialiased;
   font-weight: 400;
   width: 100vw;
+  overflow-x: hidden;
 }
 body {
   width: 100vw;
@@ -27,6 +29,7 @@ body {
   -ms-flex-direction: column;
   -o-flex-direction: column;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .content {
