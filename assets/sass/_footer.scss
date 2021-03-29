@@ -1,8 +1,11 @@
 .footer {
   background: $color3 url('/images/footer2.jpg') center center / cover no-repeat;
   color: $color;
-  padding-top: 80px;
+  padding-top: 40px;
   position: relative;
+  @include media-breakpoint-up(lg) {
+    padding-top: 80px;
+  }
   &::before {
     content: '';
     position: absolute;
@@ -20,9 +23,12 @@
   }
   h3 {
     color: #fff;
-    font-size: 50px;
+    font-size: 28px;
     font-weight: 700;
     text-shadow: 1px 1px rgba(0, 0, 0, .4);
+    @include media-breakpoint-up(lg) {
+      font-size: 50px;
+    }
   }
   p {
     margin: 0;

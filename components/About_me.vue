@@ -12,7 +12,9 @@
                     <figure class="figure_float_left" data-aos="fade-right" data-aos-duration="1000">
                         <img :src="about.image" :title="about.title" :alt="about.title" >
                     </figure>
-                    <div v-html="about.text" data-aos="fade-left" data-aos-duration="1000"></div> 
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <div v-html="about.text"></div> 
+                    </div>
                 </div>
             </div>
         </div>

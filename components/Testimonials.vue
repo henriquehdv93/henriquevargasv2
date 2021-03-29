@@ -18,8 +18,8 @@
                             <div v-html="testimonials[0].text" class="text-center"></div>
 
                             <img :src="testimonials[0].image.url" :alt="testimonials[0].image.alt" :title="testimonials[0].image.title" class="img-fluid mb-4">
-                            <h3>{{ testimonials[0].name }}</h3>
-                            <h4>{{ testimonials[0].company }}</h4>
+                            <h3 class="text-center">{{ testimonials[0].name }}</h3>
+                            <h4 class="text-center">{{ testimonials[0].company }}</h4>
                         </div>
                     </div>
                 </div>
