@@ -3,5 +3,9 @@
     color: $color;
     img {
         max-width: 255px;
+        display: none;
+        @include media-breakpoint-up(md) {
+            display: block;
+        }
     }
 }

@@ -118,12 +118,20 @@ button:focus {
   color: #FFFFFF;
 }
 .section_padding {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;  
+  @include media-breakpoint-up(lg) {
+    padding-top: 40px;
+    padding-bottom: 40px;  
+  }
 }
 .section_padding_large {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;  
+  @include media-breakpoint-up(lg) {
+    padding-top: 80px;
+    padding-bottom: 80px;  
+  }
 }
 .section_bg {
   background-color: $color3;
