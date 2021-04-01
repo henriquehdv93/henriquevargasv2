@@ -1,5 +1,6 @@
 export default {
     mode: 'universal',
+    target: 'static',
     /*
     ** Headers of the page
     */
@@ -20,9 +21,8 @@ export default {
             {hid: 'twitter:description', property: 'twitter:description', content: 'Com mais de 7 anos de experiência em programação e suporte ao cliente, trabalho com desenvolvimento de sites institucionais, blogs, lojas virtuais, hotsites, portais de notícias e landing pages focando sempre na usabilidade, acessibilidade e melhor performance para o usuário'},
             {hid: 'og:type', property: 'og:type', content: 'website'},
             {hid: 'og:url', property: 'og:url', content: 'https://www.henriquevargas.com.br'},
-            {hid: 'og:image', property: 'og:image', content: 'website'},
+            {hid: 'og:image', property: 'og:image', content: 'http://henriquevargas.com.br/compartilhamento.png'},
             {hid: 'twitter:image', property: 'twitter:image', content: 'http://henriquevargas.com.br/compartilhamento.png'},
-            {hid: 'og:type', property: 'og:type', content: 'http://henriquevargas.com.br/compartilhamento.png'},
         ],
         link: [
             {rel: 'canonical', href: 'https://www.henriquevargas.com.br'},
