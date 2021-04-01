@@ -33,17 +33,6 @@
         Testimonials,
         About_me,
     },
-    head() {
-      return {
-        meta: [
-          { hid: 'og:image', property: 'og:image', content: 'https://' + this.$host + '/share.png' },
-          { hid: 'og:image:width', property: 'og:image:width', content: '1200' },
-          { hid: 'og:image:height', property: 'og:image:height', content: '600' },
-          { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
-          { hid: 'og:url', property: 'og:url', content: 'https://' + this.$host + this.$route.fullPath }
-        ]
-      }
-    },
     data: () => ({
       site_info: {
           name: 'Henrique Vargas - Desenvolvedor Web',
