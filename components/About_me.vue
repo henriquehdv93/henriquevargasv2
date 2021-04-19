@@ -13,7 +13,8 @@
                         <img :src="about.image" :title="about.title" :alt="about.title" >
                     </figure>
                     <div data-aos="fade-left" data-aos-duration="1000">
-                        <div v-html="about.text"></div> 
+                        <div v-html="about.text" class="mb-4"></div>
+                        <a href="/curriculotech.pdf" class="btn_default mb-3" title="Veja meu currículo">Veja meu currículo</a>
                     </div>
                 </div>
             </div>
